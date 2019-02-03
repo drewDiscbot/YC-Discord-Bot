@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ycBot", "ycBot\ycBot.csproj", "{962C8C91-198F-40C2-A878-C5B8088340AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{962C8C91-198F-40C2-A878-C5B8088340AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962C8C91-198F-40C2-A878-C5B8088340AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962C8C91-198F-40C2-A878-C5B8088340AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962C8C91-198F-40C2-A878-C5B8088340AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8061810-8568-46A1-9302-F1EEF358F201}
+	EndGlobalSection
+EndGlobal
