@@ -3,12 +3,15 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.WebSocket;
 
+//TODO: implement logging for admin cmds (ie, kick, ban, mute)
+//TODO: implement gif reactions
+
 namespace ycBot
 {
     public class Program
     {
         //prefix for bot commands
-        string comPrefix = "!";
+        const string comPrefix = "!";
 
         public static void Main(string[] args)
              => new Program().MainAsync().GetAwaiter().GetResult();
@@ -38,11 +41,25 @@ namespace ycBot
         }
 
         private async Task MessageReceived(SocketMessage message)
-        {
-            if (message.Content == comPrefix + "yaoi")
+        { 
+            switch (message.Content) //do different things depending on what message is recieved, no shit
             {
-                await message.Channel.SendMessageAsync("YC!");
+                case comPrefix + "yaoi":
+                    {
+                        await message.Channel.SendMessageAsync("YC!");
+                        break;
+                    }
+
+                case comPrefix + "gif": //TODO: figure out message args
+                    {
+                        string path1 = @"C:\Users\Andrew\Desktop\test.gif";
+                        await message.Channel.SendFileAsync(path1);
+                        break;
+                    }
+                default:
+                    break;
             }
+
         }
     }
 }
